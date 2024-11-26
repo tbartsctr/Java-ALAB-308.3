@@ -1,12 +1,14 @@
-for (let i = 1; i <= 100; i++){
-    console.log(i);
+let n = 463;
+function isPrime(num) { if (num <= 1) return false;
+    for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;}
+    return true;
 
+}
 
-if ( i % 3 === 0 && i % 5 === 0){console.log("FizzBuzz");}
-
-else if ( i % 3 === 0){console.log("Fizz");}
-
-else if ( i % 5 === 0){console.log("Buzz");}
-
-else {console.log(i);}
+while (true) {
+    if (isPrime(n)){console.log(n);
+        break;
+}
+n++;
 }
