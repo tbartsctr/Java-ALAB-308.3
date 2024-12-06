@@ -346,6 +346,56 @@ oldAndLoud(user);
 
 
 
+Cat Combinator:
+
+1. Mama Cat
+const cat1 = {
+name: "Bill"
+breed: "Cat"
+age: "487"
+};
+
+console.log(cat1.age);
+
+console.log(cat1.breed);
+
+
+2. Papa Cat
+const cat2 = {
+name:
+breed:
+age:
+};
+
+3.
+function combineCats(mama, papa){
+
+console.log("mama cat", mama);
+console.log("papa cat", papa);
+}
+combineCats(cat1, cat2);
+
+3B.
+function combineCats(mama, papa){
+  const babyCat = {
+    name: mama.name + "-" + papa.name
+    age: 1
+    breed: mama.breed + "-" + papa.breed 
+  };
+  return babyCat;
+}
+
+const babyCat = combineCats(cat1, cat2);
+console.log(babyCat);
+
+
+4. console.log(combineCats(
+  combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)),
+  combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))
+));
+
+
+
 
 
 
